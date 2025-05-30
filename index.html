@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reels</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🎬 Reels</h1>
+    <input type="file" accept="video/*" id="upload" />
+    <button id="recordBtn">🎥 Înregistrează</button>
+  </header>
+
+  <main id="feed">
+    <video src="videos/sample1.mp4" controls muted loop></video>
+  </main>
+
+  <div id="cameraContainer" class="hidden">
+    <video id="camera" autoplay></video>
+    <button id="stopRecord">Oprește</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
